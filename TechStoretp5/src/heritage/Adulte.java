@@ -1,6 +1,6 @@
 package heritage;
 
-public class Adulte extends Personne {
+public class Adulte extends Personne implements Identifiable {
     private String profession;
 
     public Adulte(String nom, int age, String telephone, String profession) {
@@ -12,4 +12,11 @@ public class Adulte extends Personne {
     public String toString() {
         return super.toString() + ", profession : " + profession;
     }
+
+
+    @Override
+    public void afficherIdentite() {
+    	System.out.println("Adulte : " + getNom());
+    }
+
 }

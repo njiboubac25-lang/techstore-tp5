@@ -27,4 +27,9 @@ public class Personne {
     public String toString() {
         return "Nom : " + nom + ", âge : " + age;
     }
+
+	public void afficherIdentite() {
+		// TODO Auto-generated method stub
+		
+	}
 }
